@@ -1,5 +1,5 @@
 body {
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .navbar {
@@ -12,6 +12,10 @@ body {
 
 .navbar button {
     order: -1;
+}
+
+.navbar-toggler {
+    background-color: #9BDABE;
 }
 
 .offcanvas-header {
@@ -209,4 +213,11 @@ body {
     font-size: 40px;
     font-weight: 700;
     color: white;
+}
+
+.home-page-footer {
+    padding-top: 40px;
+    height: 80px;
+    background-color: #5269bddb;
+    text-align: center;
 }

@@ -1,0 +1,109 @@
+body {
+    /* overflow: hidden; */
+    max-height: 100vh;
+    background-image: url("../Images/Orange\ Squiggle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Bitter;
+}
+
+.navbar {
+    background-color: #FF5607 !important;
+  }
+
+  .header {
+    overflow: hidden;
+  }
+
+.navbar button {
+    order: -1;
+}
+
+.navbar-toggler {
+    background-color: #FFDAA5;
+}
+
+.offcanvas-header {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+/* X button in nav bar */
+.offcanvas-header button {
+    order: -1;
+    
+}
+
+.about-container {
+    overflow: hidden;
+    height: 90vh;
+}
+
+.about-container-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    height: 90vh;
+}
+
+.about-text {
+    z-index: 1;
+    font-family: Bitter;
+    font-weight: 600;
+    font-size: 60px;
+    color: #FF5607;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.about-text-paragrapgh {
+    background-color: #FFDAA5;
+    height: 450px;
+    width: 760px;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 40px;
+}
+
+.about-text-paragrapgh p {
+    font-size: 14px;
+    font-family: Libre Franklin;
+    text-align: center;
+}
+
+.chloe-picture {
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 50px;
+    margin: 20%;
+    margin-top: 15%;
+}
+
+
+.offcanvas-body {
+    background-color:#FFDAA5 !important;
+}
+
+.offcanvas-header {
+    background-color:#FFDAA5 !important;
+}
+
+.btn-close {
+    font-size: 30px;
+}
+
+.nav-link {
+    font-family: Libre Franklin;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+
+.home-page-footer {
+    padding-top: 40px;
+    height: 80px;
+    background-color: #ff5507e0;
+    text-align: center;
+}
