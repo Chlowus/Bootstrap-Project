@@ -1,10 +1,84 @@
-body {
-    /* overflow: hidden; */
-}
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Mansalva&display=swap');
 
-.navbar {
+#green .navbar {
     background-color: #5269BD !important;
   }
+
+  #green .navbar-toggler {
+    background-color: #9BDABE;
+}
+
+#green .offcanvas-body {
+    background-color:#9BDABE !important;
+}
+
+#green .offcanvas-header {
+    background-color:#9BDABE !important;
+}
+
+/* ORANGE */
+#orange .navbar{
+    background-color: #FF5607 !important ;
+}
+
+#orange .navbar-toggler {
+    background-color: #FFDAA5;
+}
+
+#orange .offcanvas-body {
+    background-color:#FFDAA5 !important;
+}
+
+#orange .offcanvas-header {
+    background-color:#FFDAA5 !important;
+}
+
+/* PINK */
+#pink .navbar{
+    background-color: #B38ECC !important ;
+}
+
+#pink .navbar-toggler {
+    background-color: #FCC5D3;
+}
+
+#pink .offcanvas-body {
+    background-color:#FCC5D3 !important;
+}
+
+#pink .offcanvas-header {
+    background-color:#FCC5D3 !important;
+}
+
+/* BLUE */
+#blue .navbar{
+    background-color: #977BE6 !important ;
+}
+
+#blue .navbar-toggler {
+    background-color: #AADCEC;
+}
+
+#blue .offcanvas-body {
+    background-color:#AADCEC !important;
+}
+
+#blue .offcanvas-header {
+    background-color:#AADCEC !important;
+}
+
+/* Gneric */
+
+.btn-close {
+    font-size: 30px;
+}
+
+.nav-link {
+    font-family: Libre Franklin;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
 
   .header {
     overflow: hidden;
@@ -12,10 +86,6 @@ body {
 
 .navbar button {
     order: -1;
-}
-
-.navbar-toggler {
-    background-color: #9BDABE;
 }
 
 .offcanvas-header {
@@ -42,19 +112,6 @@ body {
     height: 100vh;
     font-family: bitter;
 }
-
-/*.home-page-squiggle {
-    width: 50vw;
-    height: 100vh;
-    object-fit: cover;
-}
-
-.home-page-text {
-    width: 30vw;
-    height: 25vh;
-    align-content: center;
-    background-color:#9bdabe9a ;
-}*/
 
 .home-page-squiggle {
     display: block;
@@ -98,7 +155,7 @@ body {
 }
 
 
-.button-container {
+.home-button-container {
     display: flex;
     position: absolute;
     top: calc(60% + 100px); /* Adjust as needed to position below the text */
@@ -180,10 +237,6 @@ body {
     font-weight: 600;
 }
 
-.home-page-image-container {
-    
-}
-
 .chloe-animation {
     height: 540px;
     width: 500px;
@@ -196,28 +249,1114 @@ body {
     border: none;
 }
 
-.offcanvas-body {
-    background-color:#9BDABE !important;
-}
-
-.offcanvas-header {
-    background-color:#9BDABE !important;
-}
-
-.btn-close {
-    font-size: 30px;
-}
-
-.nav-link {
-    font-family: Libre Franklin;
-    font-size: 40px;
-    font-weight: 700;
-    color: white;
-}
-
 .home-page-footer {
     padding-top: 40px;
     height: 80px;
     background-color: #5269bddb;
     text-align: center;
+}
+
+@media screen and (max-width: 425) {
+    /* .offcanvas-header { 
+        display: grid;
+        grid-template-columns: auto;
+        
+    }*/
+    .home-page-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        overflow: hidden;
+    }
+}
+
+/*  */
+/*  */
+/*  */
+/* About SECTION */
+/*  */
+/*  */
+/*  */
+
+.about-page-body {
+    /* overflow: hidden; */
+    max-height: 100vh;
+    font-family: Bitter;
+}
+
+.about-page-main {
+    background-image: url("https://chlowus.github.io/Images---Bootstrap-Project/Orange%20Squiggle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+}
+
+.about-container {
+    overflow: hidden;
+    height: 90vh;
+}
+
+.about-container-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    height: 90vh;
+}
+
+.about-text {
+    z-index: 1;
+    font-family: Bitter;
+    font-weight: 600;
+    font-size: 60px;
+    color: #FF5607;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.about-text-paragrapgh {
+    background-color: #FFDAA5;
+    height: 450px;
+    width: 760px;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 40px;
+}
+
+.about-text-paragrapgh p {
+    font-size: 14px;
+    font-family: Libre Franklin;
+    text-align: center;
+}
+
+.chloe-picture {
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 50px;
+    margin: 20%;
+    margin-top: 15%;
+}
+
+.about-page-footer {
+    padding-top: 40px;
+    height: 80px;
+    background-color: #ff5507bd;
+    text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+
+    .about-container {
+        overflow: hidden;
+        height: 120vh;
+    }
+
+    .about-container-2 {
+        display: block;
+        height: 90vh;
+    }
+
+    .chloe-image-container {
+        columns: 2;
+        /* margin: 0 auto; */
+        display: flex;
+        justify-content: center;
+        height: 220px;
+    }
+
+    .about-text-container {
+        columns: 1;
+        position: relative;
+        height: 480px;
+    }
+
+    .chloe-picture {
+        height: 150px;
+        width: 150px;
+        object-fit: cover;
+        border-radius: 20px;
+        
+        margin-top: 5%;
+    }
+
+    .about-text {
+        z-index: 1;
+        font-family: Bitter;
+        font-weight: 600;
+        font-size: 45px;
+        color: #FF5607;
+        text-align: center;
+        margin-top: 3%;
+    }
+
+    .about-text-paragrapgh {
+        background-color: #FFDAA5;
+        height: 500px;
+        width: 350px;
+        padding: 20px;
+        border-radius: 20px;
+        margin: auto;
+        margin-top: -20px;
+    }
+
+    .about-text-paragrapgh p {
+        font-size: 10px;
+        font-family: Libre Franklin;
+        text-align: center;
+    }
+
+    .about-page-footer {
+        padding-top: 40px;
+        height: 40px;
+        background-color: #ff5507e0;
+        text-align: center;
+    }
+    
+}
+
+/*  */
+/*  */
+/*  */
+/* Resume Section */
+/* */
+/*  */
+/*  */
+
+resume-page-body {
+    /* overflow: hidden; */
+    max-height: 310vh;
+    font-family: Bitter;
+}
+
+.resume-page-body {
+    background-image: url("https://chlowus.github.io/Images---Bootstrap-Project/Pink-squiggle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    height: 310vh;
+    background-attachment: fixed;
+}
+
+.resume-page-main {
+    height: 310vh;
+}
+
+.resume-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.resume-text {
+    z-index: 1;
+    font-family: Bitter;
+    font-weight: 600;
+    font-size: 60px;
+    color: #B38ECC;
+    text-align: center;
+    padding: 7px;
+    padding-top: 20px;
+    margin-left: 635px;
+    height: 80px;
+    width: 250px;
+}
+
+.resume-image {
+    height: 150px;
+    width: 120px;
+    
+    margin-left: auto;
+    margin-right: 300px;
+}
+
+.lc-container {
+    margin-top: 50px;
+}
+
+.lc-container h3 {
+    text-align: center;
+    font-family: Libre Franklin;
+}
+
+.lc-box {
+    height: 170px;
+    width: 700px;
+    border-radius: 30px;
+    border: #B38ECC solid 2px;
+    background-color: #fcc5d3c0;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lc-box p {
+    text-align: center;
+    font-family: Libre Franklin;
+    color: black;
+    padding: 20px;
+}
+
+.line{
+    height: 100px;
+    width: 2px;
+    background-color: #B38ECC;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ep-container {
+    margin-top: 50px;
+}
+
+.ep-container h3 {
+    text-align: center;
+    font-family: Libre Franklin;
+}
+
+.ep-box {
+    height: 280px;
+    width: 700px;
+    border-radius: 30px;
+    border: #B38ECC solid 2px;
+    background-color: #fcc5d3c0;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ep-box p {
+    text-align: center;
+    font-family: Libre Franklin;
+    color: black;
+    padding: 20px;
+}
+
+.bni-container {
+    margin-top: 50px;
+}
+
+.bni-container h3 {
+    text-align: center;
+    font-family: Libre Franklin;
+}
+
+.bni-box {
+    height: 150px;
+    width: 700px;
+    border-radius: 30px;
+    border: #B38ECC solid 2px;
+    background-color: #fcc5d3c0;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bni-box p {
+    text-align: center;
+    font-family: Libre Franklin;
+    color: black;
+    padding: 20px;
+}
+
+.arcc-container {
+    margin-top: 50px;
+}
+
+.arcc-container h3 {
+    text-align: center;
+    font-family: Libre Franklin;
+}
+
+.arcc-box {
+    height: 190px;
+    width: 700px;
+    border-radius: 30px;
+    border: #B38ECC solid 2px;
+    background-color: #fcc5d3c0;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.arcc-box p {
+    text-align: center;
+    font-family: Libre Franklin;
+    color: black;
+    padding: 20px;
+}
+
+.wghs-container {
+    margin-top: 50px;
+}
+
+.wghs-container h3 {
+    text-align: center;
+    font-family: Libre Franklin;
+}
+
+.wghs-box {
+    height: 210px;
+    width: 700px;
+    border-radius: 30px;
+    border: #B38ECC solid 2px;
+    background-color: #fcc5d3c0;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wghs-box p {
+    text-align: center;
+    font-family: Libre Franklin;
+    color: black;
+    padding: 20px;
+}
+
+.resume-page-footer {
+    padding-top: 40px;
+    height: 90px;
+    background-color: #b38eccd0;
+    text-align: center;
+    
+}
+
+/*  */
+/*  */
+/*  */
+/* SKILLS SECTION */
+/*  */
+/*  */
+/*  */
+
+.skills-page-body {
+    /* overflow: hidden; */
+    max-height: 110vh;
+    font-family: Bitter;
+}
+
+.skills-page-main {
+    background-image: url("https://chlowus.github.io/Images---Bootstrap-Project/Blue%20Squiggle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+    height: 110vh;
+}
+
+.skills-container {
+    overflow: hidden;
+    height: 100vh;
+}
+.html-icon {
+    background-color: #AADCEC;
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    border: #977BE6 2px solid;
+    margin-left: 120px;
+    margin-top: 80px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.html-icon h4 {
+    text-align: center;
+    font-family: bitter;
+}
+
+i{
+    font-size: 350px;
+    color: white;
+}
+i:hover{
+    color: black;
+}
+
+.skills-container-2 h3 {
+    text-align: center;
+    margin-top: 20px;
+    font-family: Libre Franklin;
+    font-weight: 700;
+    color: #977BE6;
+}
+
+.skills-container-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow: hidden;
+    height: 90vh;
+}
+
+.css-icon {
+    background-color: #AADCEC;
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    border: #977BE6 2px solid;
+    margin-left: 120px;
+    margin-top: 80px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.css-icon h4 {
+    text-align: center;
+    font-family: bitter;
+}
+
+.bootstrap-icon {
+    background-color: #AADCEC;
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    border: #977BE6 2px solid;
+    margin-left: 120px;
+    margin-top: 80px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.bootstrap-icon h4 {
+    text-align: center;
+    font-family: bitter;
+}
+
+.skills-text {
+    z-index: 1;
+    font-family: Bitter;
+    font-weight: 600;
+    font-size: 60px;
+    color: #977BE6;
+    text-align: center;
+    padding: 7px;
+    margin-top: 3%;
+    margin-left: 635px;
+    background-color: #AADCEC;
+    height: 80px;
+    width: 250px;
+    border-radius: 40px;
+}
+
+
+.skills-page-footer {
+    padding-top: 40px;
+    height: 80px;
+    background-color: #987be6c8;
+    text-align: center;
+}
+
+/*  */
+/*  */
+/*  */
+/* Testimonials */
+/*  */
+/*  */
+/*  */
+
+.testimonial-page-body {
+    /* overflow: hidden; */
+    max-height: 100vh;
+    font-family: Bitter;
+}
+
+.testimonial-page-body {
+    background-image: url("https://chlowus.github.io/Images---Bootstrap-Project/Green%20Squiggle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.testimonial-page-main{
+    height: 100vh;
+}
+
+.testimonial-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.testimonial-text {
+    z-index: 1;
+    font-family: Bitter;
+    font-weight: 600;
+    font-size: 60px;
+    color: #0F1B61;
+    text-align: center;
+    padding: 7px;
+    padding-top: 50px;
+    margin-left: 35px;
+    height: 80px;
+    width: 250px;
+}
+
+#carouselExampleIndicators {
+    height: 450px;
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    border-radius: 40px;
+}
+.carousel {
+    height: 450px;
+    width: 950px;
+}
+
+
+.slide-text {
+    font-family: bitter;
+    color: black;
+    height: 150px;
+    width: 450px;
+    margin-top: 90px;
+    margin-left: 90px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.quotation-mark1 {
+    font-family: mansalva;
+    font-size: 50px;
+    color: #5269BD;
+    margin-left: -390px;
+    margin-top: -60px;
+}
+
+.quotation-mark2 {
+    font-family: mansalva;
+    font-size: 50px;
+    color: #5269BD;
+    margin-right: -390px;
+}
+
+.slide-text h3{
+    margin-top: -35px;
+    font-size: 40px;
+    font-family: mansalva;
+    color: #5269BD;
+}
+
+.marcus-name {
+    margin-top: 50px !important;
+}
+
+.carousel-item{
+    height: 450px;
+    width: 950px;
+    background-color: #9bdabecf;
+    border-radius: 40px;
+}
+
+.image-display {
+    display: flex;
+}
+
+.carousel-image{
+    height: 290px;
+    width: 290px;
+    margin-top: 90px;
+    margin-left: 50px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.d-block{
+    height: 290px;
+    width: 850px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.carousel-indicators {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+    height: 20px;
+}
+
+.testimonial-btn {
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.carousel-control-prev {
+    width: 50px;
+    height: 150px;
+    margin-top: 380px;
+    margin-left: 200px;
+}
+
+.carousel-control-next {
+    width: 50px;
+    height: 150px;
+    margin-top: 380px;
+    margin-right: 200px;
+}
+
+.testimonial-page-footer {
+    padding-top: 40px;
+    height: 90px;
+    background-color: #5269bdb7;
+    text-align: center;
+    
+}
+
+/*  */
+/*  */
+/*  */
+/* Projects SECTION */
+/*  */
+/*  */
+/*  */
+
+.projects-page-body {
+    /* overflow: hidden; */
+    max-height: 190vh;
+    font-family: Bitter;
+}
+
+.projects-page-body {
+    background-image: url("https://chlowus.github.io/Images---Bootstrap-Project/Orange%20Squiggle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    height: 190vh;
+    background-attachment: fixed;
+}
+
+.projects-page-main {
+    height: 190vh;
+}
+
+.project-buttons-g {
+    width: 100px;
+    border-radius: 30px;
+    background-color: #FFDAA5;
+    font-family: mansalva;
+    color: black;
+    border: #FF5607 solid 2px;
+}
+
+.project-buttons-g:hover {
+    width: 100px;
+    border-radius: 30px;
+    background-color: #FF5607;
+    font-family: mansalva;
+    border: none;
+    color: white;
+}
+
+.project-buttons-l {
+    width: 100px;
+    border-radius: 30px;
+    background-color: #FFDAA5;
+    font-family: mansalva;
+    color: black;
+    border: #FF5607 solid 2px;
+}
+
+.project-buttons-l:hover {
+    width: 100px;
+    border-radius: 30px;
+    background-color: #FF5607;
+    font-family: mansalva;
+    border: none;
+    color: white;
+}
+
+.projects-container-2 h3 {
+    text-align: center;
+    margin-top: 20px;
+    font-family: Libre Franklin;
+    font-weight: 700;
+    color: #977BE6;
+}
+
+.projects-container-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    height: 190vh;
+}
+
+.projects-text {
+    z-index: 1;
+    font-family: Bitter;
+    font-weight: 600;
+    font-size: 60px;
+    color: #FF5607;
+    text-align: center;
+    padding: 7px;
+    padding-top: 20px;
+    margin-left: 635px;
+    height: 80px;
+    width: 250px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+.row2 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.col {
+   
+    margin-left: 150px;
+    margin-top: 40px;
+}
+/* overhere chloe */
+#card{
+    height: 20rem;
+    width: 30rem;
+    margin-top: 2px;
+}
+
+.projects-page-footer {
+    padding-top: 40px;
+    height: 90px;
+    background-color: #ff550767;
+    text-align: center;
+    
+}
+
+/*  */
+/*  */
+/*  */
+/* Contact SECTION */
+/*  */
+/*  */
+/*  */
+
+.contact-page-body {
+    /* overflow: hidden; */
+    max-height: 200vh;
+    font-family: Bitter;
+}
+
+.contact-page-body {
+    background-image: url("https://chlowus.github.io/Images---Bootstrap-Project/Pink-squiggle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    height: 200vh;
+    background-attachment: fixed;
+}
+
+.contact-page-main{
+    height: 200vh;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.contact-title-background {
+    width: 100%;
+    background-color: #e1d9e6;
+}
+
+.h3-contact {
+    font-size: 50px;
+    font-family: Libre Franklin;
+    font-weight: 700;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.title {
+    font-size: 80px;
+    font-family: bitter;
+    color: #B38ECC;
+    font-weight: 400;
+    margin-left: 25px;
+}
+
+.dynamic-text li {
+    list-style: none;
+    margin-left: -20px;
+    position: relative;
+    top: 0;
+}
+
+@keyframes slide {
+    100% {
+        top: -80px;
+    }
+}
+
+.dynamic-text li .title {
+    position: relative;
+}
+
+.dynamic-text li .title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #e1d9e6 ;
+    border-left: 2px solid #B38ECC;
+    animation: typing 4s steps(18) infinite;
+}
+
+@keyframes typing {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+.text-form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contact-me {
+    margin-top: 300px;
+    margin-left: 200px;
+    font-family: bitter;
+}
+
+.contact-me h2{
+    font-size: 60px;
+}
+
+.contact-form-box {
+    height: 380px;
+    width: 600px;
+    background-color: #FCC5D3;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    border: #B38ECC solid 2px;
+    margin-top: 100px;
+}
+
+.form {
+    margin-left: 49px;
+    margin-top: 30px;
+}
+
+.form input {
+    width: 500px;
+    background-color: #FCC5D3;
+    color: black;
+    font-family: Libre Franklin;
+    border: none;
+    border-bottom: black 2px solid !important;
+    border-radius: 0px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-floating textarea {
+    width: 500px;
+    background-color: #FCC5D3;
+    color: black;
+    border: none;
+    border-bottom: black 2px solid !important;
+    border-radius: 0px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+label {
+    font-family: Libre Franklin;
+    margin-left: 200px;
+    font-size: 18px;
+}
+
+.my-details {
+    display: flex;
+}
+
+.btn-contact {
+    background-color: #B38ECC;
+    font-family: mansalva;
+    font-size: 25px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 180px;
+}
+
+.pin-icon {
+    height: 100px;
+    width: 100px;
+    background-color: #B38ECC;
+    border-radius: 50%;
+    border: #0F1B61 2px solid;
+    margin-left: 150px;
+    margin-top: 100px;
+} 
+
+.bi-geo-alt {
+    height: 80px;
+    width: 80px;
+    padding-left: 20px;
+    padding-top: 20px;
+    color: white;
+}
+
+.mail-icon {
+    height: 100px;
+    width: 100px;
+    background-color: #B38ECC;
+    border-radius: 50%;
+    border: #0F1B61 2px solid;
+    margin-left: 150px;
+    margin-top: 100px;
+} 
+
+.bi-envelope {
+    height: 80px;
+    width: 80px;
+    padding-left: 20px;
+    padding-top: 20px;
+    color: white;
+}
+
+.phone-icon {
+    height: 100px;
+    width: 100px;
+    background-color: #B38ECC;
+    border-radius: 50%;
+    border: #0F1B61 2px solid;
+    margin-left: 150px;
+    margin-top: 100px;
+}
+
+.bi-telephone {
+    height: 80px;
+    width: 80px;
+    padding-left: 20px;
+    padding-top: 20px;
+    color: white;
+}
+
+.listed-details h3 {
+    height: 100px;
+    width: 100px;
+    margin-left: 100px;
+    margin-top: 115px;
+    font-weight: 600;
+}
+
+.contact-page-footer {
+    padding-top: 40px;
+    height: 90px;
+    background-color: #b38eccb7;
+    text-align: center;
+    
+}
+
+@media only screen and (max-width:720px ) {
+    .h3-contact {
+        font-size: 30px;
+        font-family: Libre Franklin;
+        font-weight: 700;
+        margin-left: 150px;
+        margin-top: 20px;
+    }
+
+    .title {
+        font-size: 40px;
+        font-family: bitter;
+        color: #B38ECC;
+        font-weight: 400;
+        margin-left: 5px;
+    }
+    
+    .dynamic-text li {
+        list-style: none;
+        margin-left: -20px;
+        position: relative;
+        top: 0;
+    }
+    
+    @keyframes slide {
+        100% {
+            top: -80px;
+        }
+    }
+    
+    .dynamic-text li .title {
+        position: relative;
+    }
+    
+    .dynamic-text li .title::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: #e1d9e6 ;
+        border-left: 2px solid #B38ECC;
+        animation: typing 4s steps(18) infinite;
+    }
+    
+    @keyframes typing {
+        100% {
+            left: 100%;
+            margin: 0 -35px 0 35px;
+        }
+    }
+
+    .contact-me {
+        margin-top: 300px;
+        margin-left: 50px;
+        font-family: bitter;
+    }
+    
+    .contact-me h2{
+        font-size: 30px;
+    }
+
+    .contact-form-box {
+        height: 150px;
+        width: 300px;
+        background-color: #FCC5D3;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 30px;
+        border: #B38ECC solid 2px;
+        margin-top: 100px;
+    }
+    
+    .form {
+        margin-left: 49px;
+        margin-top: 30px;
+    }
+    
+    .form input {
+        width: 500px;
+        background-color: #FCC5D3;
+        color: black;
+        font-family: Libre Franklin;
+        border: none;
+        border-bottom: black 2px solid !important;
+        border-radius: 0px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .form-floating textarea {
+        width: 500px;
+        background-color: #FCC5D3;
+        color: black;
+        border: none;
+        border-bottom: black 2px solid !important;
+        border-radius: 0px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
 }
